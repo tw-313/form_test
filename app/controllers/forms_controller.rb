@@ -3,6 +3,7 @@ class FormsController < ApplicationController
         
     end
     def input_age
-        render plain:params["form_test"]["age"]
+       @age = params["form_test"]["age"]
+       @country = params["form_test"]["country"]
     end
 end
